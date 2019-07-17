@@ -2,7 +2,7 @@ server:
   port: 8255
 spring: 
   profile: test
-  application: 
+  application:
   name: configget
 eureka:
   client:
