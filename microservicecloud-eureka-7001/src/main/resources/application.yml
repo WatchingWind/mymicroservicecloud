@@ -1,0 +1,15 @@
+server:
+  port: 7001
+
+
+eureka:
+  instance:
+    hostname: eureka7001.com  #服务端实例化名称
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 1000 # 续期时间，即扫描失效服务的间隔时间(毫秒)
+  client:
+    register-with-eureka: false  #false 表示不想注册中心注册自己
+    fetch-registry: false  #false  表示自己就是注册中心，我的职责就是维护服务实例，并不需要检索服务
+    service-url:
+      defaultZone:  http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
