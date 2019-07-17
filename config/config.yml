@@ -1,5 +1,9 @@
 server:
   port: 8255
+spring: 
+  profile: test
+  application: 
+  name: configget
 eureka:
   client:
     service-url:
